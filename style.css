@@ -8,17 +8,48 @@ body {
     font-size: 20px;
     line-height: 1.4;
     font-family: 'IBM Mono', monospace;
+    /*background: #F2F2F2;*/
 }
 
-header {
-    padding: 20px;
-}
-
-header p {
+.main-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-bottom: 1.5px solid Gainsboro;
+    padding: 10px;
+  }
+  
+  .main-header .container {
     max-width: 620px;
-    margin: 0px auto;
-    font-size: 14px;
-}
+    margin: 0 auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-logo {
+    font-weight: normal;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .header-logo:hover {
+    color: blue;
+    text-decoration: underline;
+  }
+
+  .header-menu .header-about {
+    font-weight: normal;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .header-menu .header-about:hover {
+    color: blue;
+    text-decoration: underline;
+  }
 
 .content {
     max-width: 620px;
@@ -26,9 +57,15 @@ header p {
 }
 
 h1 {
+    margin-top: 75px; /* Abstand oberhalb der Überschrift */
     font-size: 36px;
     text-align: center;
     color: blue;
+}
+
+h2{
+    font-size: 24px;
+    color: orangered;  
 }
 
 p {
@@ -36,11 +73,20 @@ p {
 }
 
 a {
-    color: #fff;
+    color: black;
     text-decoration: underline;
 }
 
 a:hover {
+    color: blue;
+}
+
+.info-table a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.info-table a:hover {
     color: blue;
 }
 
@@ -154,6 +200,38 @@ section {
 .year-label:last-child {
     right: 0;
 }
+
+
+.button-container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    color: blue;
+    border: 2px solid blue;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: blue;
+    color: white;
+}
+
+button p {
+    margin: 0;
+}
+
+
+  
 
 footer {
     background-color: Gainsboro;

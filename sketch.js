@@ -28,12 +28,14 @@ function setup() {
 
 function draw() {
   background("white");
+  //background ("#F2F2F2");
   //background("LightSteelBlue");
   translate(width / 2, height / 2); // Ursprung ins Zentrum verschieben
   textAlign(CENTER, CENTER); // Textausrichtung
 
   // Nullpunkt-Zirkel zeichnen
   stroke(0); 
+  strokeWeight(1.5);
   noFill();
   circle(0, 0, zeroRadius * 2);
 

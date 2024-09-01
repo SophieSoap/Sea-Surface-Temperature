@@ -1,0 +1,168 @@
+@font-face {
+    font-family: IBM Mono;
+    src: url('https://fonts.google.com/specimen/IBM+Plex+Mono');
+  }
+
+body {
+    margin: 0px;
+    font-size: 20px;
+    line-height: 1.4;
+    font-family: 'IBM Mono', monospace;
+}
+
+header {
+    padding: 20px;
+}
+
+header p {
+    max-width: 620px;
+    margin: 0px auto;
+    font-size: 14px;
+}
+
+.content {
+    max-width: 620px;
+    margin: 0px auto;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    color: blue;
+}
+
+p {
+    font-size: 16px;
+}
+
+a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: blue;
+}
+
+#canvas-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    top: 0%;
+}
+
+.info-icon-container {
+    position: absolute;
+    top: 20px; /* vertikale Position */
+    right: 50px; /* horizontale Position */
+    width: 30px; /* Durchmesser des Kreises */
+    height: 30px; /* Durchmesser des Kreises */
+    border-radius: 50%; /* Kreisform */
+    background-color: Gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.info-icon-container:hover {
+    background-color: #1E1E1E;
+}
+
+.info-table {
+    display: none;
+    position: absolute;
+    top: -20px;
+    left: 40px;
+    background-color: #1E1E1E;
+    color: #fff;
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 6px;
+}
+
+.info-table::after {
+    content: " ";
+    position: absolute;
+    top: 35%;
+    right: 100%; /* To the left of the info table */
+    margin-top: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #1E1E1E transparent transparent;
+}
+
+.info-icon-container:hover .info-table {
+    display:flex;
+    font-size: 14px;
+    min-width: 220px;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: justify;
+}
+
+.slider-container {
+    position: relative;
+    width: 360px;
+    padding: 20px;
+    margin: auto;
+}
+ 
+#yearSlider {
+    width: 300px;
+    height: 7px;
+    background: Gainsboro;
+    border-radius: 5px;
+    appearance: none;
+    margin: 0;
+    position: absolute;
+    top: 17px;
+    left: 50px;
+    margin: auto;
+}
+
+/* Webkit (Chrome, Safari, Opera) 
+#yearSlider::-webkit-slider-thumb */
+/* Firefox */
+#yearSlider::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background: blue;
+    cursor: pointer;
+}
+
+.year-label {
+    position: absolute;
+    top: 10px;
+    width: 50px;
+    text-align: center;
+    font-size: 14px;
+  }
+
+.year-label:first-child {
+    left: 0;
+}
+  
+.year-label:last-child {
+    right: 0;
+}
+
+footer {
+    background-color: Gainsboro;
+    padding: 20px;
+}
+
+footer p {
+    max-width: 620px;
+    margin: 0px auto;
+    font-size: 14px;
+    text-align: center;
+}
